@@ -3,7 +3,6 @@ interface Post {
    body: string;
    id: number;
    title: string;
-   userId: number;
 }
 async function fetchPosts(): Promise<Post[]> {
    const response = await axios.get<Post[]>(
